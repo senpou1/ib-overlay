@@ -20,12 +20,12 @@ cd openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64/
 ## 2、下载整个项目的 master.zip
 
 ```
-wget -c -O master.zip.tmp https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://github.com/senpou1/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 [![Github](https://img.shields.io/badge/如果下载不动,可套用加速前缀,点这里前往-d6acef?logo=github&logoColor=fff&labelColor=000&style=for-the-badge)](https://wkdaily.cpolar.top/archives/1) 
 ``` 
-wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/senpou1/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 ## 3、解压 master.zip 到当前目录(ImageBuilder的根目录)，去除无关文件
@@ -69,10 +69,10 @@ CONFIG_TARGET_ROOTFS_EXT4FS=n
 
 # 相关项目
 ### Run是如何生成的 如何找run文件？如何制作run文件
-https://github.com/wukongdaily/RunFilesBuilder
+https://github.com/senpou1/RunFilesBuilder
 
 ### 云端的ImageBuilder工作流(Github Action)
-https://github.com/wukongdaily/AutoBuildImmortalWrt
+https://github.com/senpou1/AutoBuildImmortalWrt
 
 ### OpenWrt ImageBuilder 官网下载地址
 https://mirror-03.infra.openwrt.org/releases/24.10.2/targets/x86/64/
