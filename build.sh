@@ -19,7 +19,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-compat"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-firewall-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-base-zh-cn"
 # 如果勾选了docker 务必保证软件包大小ROOTFS_PARTSIZE至少大于512 目前1024
-BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
+# BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
 # 文件管理器
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-filemanager-zh-cn"
 # openlist用来平替alist 目前阿里云镜像仓库也有了
@@ -45,13 +45,13 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-argon-config-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-argon-config"
 
 # 第三方插件 istore 应用商店
-#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"
 # 第三方插件 首页和网络向导
-#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-quickstart"
-#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-quickstart-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-quickstart"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-quickstart-zh-cn"
 
 # 第三方插件 luci-app-adguardhome 去广告
-#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-adguardhome"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-adguardhome"
 # 第三方插件 openclash 内核放在files/etc/openclash/core/clash_meta 若不勾选则不集成
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-openclash"
 # 第三方插件 luci-app-passwall 包含内部组件
